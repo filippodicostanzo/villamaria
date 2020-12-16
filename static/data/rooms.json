@@ -1,0 +1,522 @@
+{
+  "rooms": [
+    {
+      "id": "basic-double",
+      "name": {
+        "it": "Matrimoniale Basic",
+        "en": "Basic Double"
+      },
+      "description": {
+        "it": "Camera Matrimoniale Basic senza vista mare",
+        "en": ""
+      },
+      "resume": {
+        "it": "",
+        "en": ""
+      },
+      "size": "13",
+      "services": [
+        {
+          "id": "bath",
+          "name": {
+            "it": "Bagno Privato",
+            "en": "Private Bathroom"
+          },
+          "icon": "fh fh-bath"
+        },
+        {
+          "id": "tv",
+          "name": {
+            "it": "TV",
+            "en": "TV"
+          },
+          "icon": "fh fh-television"
+        },
+        {
+          "id": "kit",
+          "name": {
+            "it": "Kit di Cortesia",
+            "en": "Courtesy Kit"
+          },
+          "icon": "fh fh-towel2"
+        },
+        {
+          "id": "air",
+          "name": {
+            "it": "Aria Condizionata",
+            "en": "Air Conditioning"
+          },
+          "icon": "fh fh-air-conditioner"
+        },
+        {
+          "id": "phone",
+          "name": {
+            "it": "Telefono",
+            "en": "Phone"
+          },
+          "icon": "fh fh-telephone"
+        },
+        {
+          "id": "hairdryer",
+          "name": {
+            "it": "Asciugacapelli",
+            "en": "Hairdryer"
+          },
+          "icon": "fh fh-hairdryer"
+        },
+        {
+          "id": "minibar",
+          "name": {
+            "it": "Mini Bar",
+            "en": "Mini Bar"
+          },
+          "icon": "fh fh-minibar"
+        }
+      ]
+    },
+    {
+      "id": "standard-double",
+      "name": {
+        "it": "Matrimoniale Standard",
+        "en": "Standard Double"
+      },
+      "description": {
+        "it": "Vista mare laterale o parziale, con balcone o finestra.",
+        "en": ""
+      },
+      "resume": {
+        "it": "",
+        "en": ""
+      },
+      "size": "16",
+      "services": [
+        {
+          "id": "bath",
+          "name": {
+            "it": "Bagno Privato",
+            "en": "Private Bathroom"
+          },
+          "icon": "fh fh-bath"
+        },
+        {
+          "id": "tv",
+          "name": {
+            "it": "TV",
+            "en": "TV"
+          },
+          "icon": "fh fh-television"
+        },
+        {
+          "id": "kit",
+          "name": {
+            "it": "Kit di Cortesia",
+            "en": "Courtesy Kit"
+          },
+          "icon": "fh fh-towel2"
+        },
+        {
+          "id": "air",
+          "name": {
+            "it": "Aria Condizionata",
+            "en": "Air Conditioning"
+          },
+          "icon": "fh fh-air-conditioner"
+        },
+        {
+          "id": "phone",
+          "name": {
+            "it": "Telefono",
+            "en": "Phone"
+          },
+          "icon": "fh fh-telephone"
+        },
+        {
+          "id": "hairdryer",
+          "name": {
+            "it": "Asciugacapelli",
+            "en": "Hairdryer"
+          },
+          "icon": "fh fh-hairdryer"
+        },
+        {
+          "id": "minibar",
+          "name": {
+            "it": "Mini Bar",
+            "en": "Mini Bar"
+          },
+          "icon": "fh fh-minibar"
+        }
+      ]
+    },
+    {
+      "id": "comfort-double",
+      "name": {
+        "it": "Matrimoniale Comfort",
+        "en": "Comfort Double"
+      },
+      "description": {
+        "it": "Balconcino o terrazzino con vista mare laterale o parziale.",
+        "en": ""
+      },
+      "resume": {
+        "it": "",
+        "en": ""
+      },
+      "size": "20",
+      "services": [
+        {
+          "id": "bath",
+          "name": {
+            "it": "Bagno Privato",
+            "en": "Private Bathroom"
+          },
+          "icon": "fh fh-bath"
+        },
+        {
+          "id": "tv",
+          "name": {
+            "it": "TV",
+            "en": "TV"
+          },
+          "icon": "fh fh-television"
+        },
+        {
+          "id": "kit",
+          "name": {
+            "it": "Kit di Cortesia",
+            "en": "Courtesy Kit"
+          },
+          "icon": "fh fh-towel2"
+        },
+        {
+          "id": "air",
+          "name": {
+            "it": "Aria Condizionata",
+            "en": "Air Conditioning"
+          },
+          "icon": "fh fh-air-conditioner"
+        },
+        {
+          "id": "phone",
+          "name": {
+            "it": "Telefono",
+            "en": "Phone"
+          },
+          "icon": "fh fh-telephone"
+        },
+        {
+          "id": "hairdryer",
+          "name": {
+            "it": "Asciugacapelli",
+            "en": "Hairdryer"
+          },
+          "icon": "fh fh-hairdryer"
+        },
+        {
+          "id": "minibar",
+          "name": {
+            "it": "Mini Bar",
+            "en": "Mini Bar"
+          },
+          "icon": "fh fh-minibar"
+        }
+      ]
+    },
+    {
+      "id": "superior-double",
+      "name": {
+        "it": "Matrimoniale Superior",
+        "en": "Superior Double"
+      },
+      "description": {
+        "it": "Situata nel residence dell'Hotel con ampia finestre e vista mare frontale. Oppure nel corpo centrale con balconcino e vista mare.",
+        "en": ""
+      },
+      "resume": {
+        "it": "",
+        "en": ""
+      },
+      "size": "18",
+      "services": [
+        {
+          "id": "bath",
+          "name": {
+            "it": "Bagno Privato",
+            "en": "Private Bathroom"
+          },
+          "icon": "fh fh-bath"
+        },
+        {
+          "id": "tv",
+          "name": {
+            "it": "TV",
+            "en": "TV"
+          },
+          "icon": "fh fh-television"
+        },
+        {
+          "id": "kit",
+          "name": {
+            "it": "Kit di Cortesia",
+            "en": "Courtesy Kit"
+          },
+          "icon": "fh fh-towel2"
+        },
+        {
+          "id": "air",
+          "name": {
+            "it": "Aria Condizionata",
+            "en": "Air Conditioning"
+          },
+          "icon": "fh fh-air-conditioner"
+        },
+        {
+          "id": "phone",
+          "name": {
+            "it": "Telefono",
+            "en": "Phone"
+          },
+          "icon": "fh fh-telephone"
+        },
+        {
+          "id": "hairdryer",
+          "name": {
+            "it": "Asciugacapelli",
+            "en": "Hairdryer"
+          },
+          "icon": "fh fh-hairdryer"
+        },
+        {
+          "id": "minibar",
+          "name": {
+            "it": "Mini Bar",
+            "en": "Mini Bar"
+          },
+          "icon": "fh fh-minibar"
+        }
+      ]
+    },
+    {
+      "id": "deluxe-double",
+      "name": {
+        "it": "Matrimoniale Deluxe",
+        "en": "Deluxe Double"
+      },
+      "description": {
+        "it": "Situata nel residence dell'hotel con terrazzo e vista mare",
+        "en": ""
+      },
+      "resume": {
+        "it": "",
+        "en": ""
+      },
+      "size": "30",
+      "services": [
+        {
+          "id": "bath",
+          "name": {
+            "it": "Bagno Privato",
+            "en": "Private Bathroom"
+          },
+          "icon": "fh fh-bath"
+        },
+        {
+          "id": "tv",
+          "name": {
+            "it": "TV",
+            "en": "TV"
+          },
+          "icon": "fh fh-television"
+        },
+        {
+          "id": "kit",
+          "name": {
+            "it": "Kit di Cortesia",
+            "en": "Courtesy Kit"
+          },
+          "icon": "fh fh-towel2"
+        },
+        {
+          "id": "air",
+          "name": {
+            "it": "Aria Condizionata",
+            "en": "Air Conditioning"
+          },
+          "icon": "fh fh-air-conditioner"
+        },
+        {
+          "id": "phone",
+          "name": {
+            "it": "Telefono",
+            "en": "Phone"
+          },
+          "icon": "fh fh-telephone"
+        },
+        {
+          "id": "hairdryer",
+          "name": {
+            "it": "Asciugacapelli",
+            "en": "Hairdryer"
+          },
+          "icon": "fh fh-hairdryer"
+        },
+        {
+          "id": "minibar",
+          "name": {
+            "it": "Mini Bar",
+            "en": "Mini Bar"
+          },
+          "icon": "fh fh-minibar"
+        }
+      ]
+    },
+    {
+      "id": "family",
+      "name": {
+        "it": "Family Room",
+        "en": "Family Room"
+      },
+      "description": {
+        "it": "Balconcino e vista mare laterale",
+        "en": ""
+      },
+      "resume": {
+        "it": "",
+        "en": ""
+      },
+      "size": "30",
+      "services": [
+        {
+          "id": "bath",
+          "name": {
+            "it": "Bagno Privato",
+            "en": "Private Bathroom"
+          },
+          "icon": "fh fh-bath"
+        },
+        {
+          "id": "tv",
+          "name": {
+            "it": "TV",
+            "en": "TV"
+          },
+          "icon": "fh fh-television"
+        },
+        {
+          "id": "kit",
+          "name": {
+            "it": "Kit di Cortesia",
+            "en": "Courtesy Kit"
+          },
+          "icon": "fh fh-towel2"
+        },
+        {
+          "id": "air",
+          "name": {
+            "it": "Aria Condizionata",
+            "en": "Air Conditioning"
+          },
+          "icon": "fh fh-air-conditioner"
+        },
+        {
+          "id": "phone",
+          "name": {
+            "it": "Telefono",
+            "en": "Phone"
+          },
+          "icon": "fh fh-telephone"
+        },
+        {
+          "id": "hairdryer",
+          "name": {
+            "it": "Asciugacapelli",
+            "en": "Hairdryer"
+          },
+          "icon": "fh fh-hairdryer"
+        },
+        {
+          "id": "minibar",
+          "name": {
+            "it": "Mini Bar",
+            "en": "Mini Bar"
+          },
+          "icon": "fh fh-minibar"
+        }
+      ]
+    },
+    {
+      "id": "junior-suite",
+      "name": {
+        "it": "Junior Suite",
+        "en": "Junior Suite"
+      },
+      "description": {
+        "it": "Splendida Junior Suite con vista giardino.",
+        "en": ""
+      },
+      "resume": {
+        "it": "",
+        "en": ""
+      },
+      "size": "40",
+      "services": [
+        {
+          "id": "bath",
+          "name": {
+            "it": "Bagno Privato",
+            "en": "Private Bathroom"
+          },
+          "icon": "fh fh-bath"
+        },
+        {
+          "id": "tv",
+          "name": {
+            "it": "TV",
+            "en": "TV"
+          },
+          "icon": "fh fh-television"
+        },
+        {
+          "id": "kit",
+          "name": {
+            "it": "Kit di Cortesia",
+            "en": "Courtesy Kit"
+          },
+          "icon": "fh fh-towel2"
+        },
+        {
+          "id": "air",
+          "name": {
+            "it": "Aria Condizionata",
+            "en": "Air Conditioning"
+          },
+          "icon": "fh fh-air-conditioner"
+        },
+        {
+          "id": "phone",
+          "name": {
+            "it": "Telefono",
+            "en": "Phone"
+          },
+          "icon": "fh fh-telephone"
+        },
+        {
+          "id": "hairdryer",
+          "name": {
+            "it": "Asciugacapelli",
+            "en": "Hairdryer"
+          },
+          "icon": "fh fh-hairdryer"
+        },
+        {
+          "id": "minibar",
+          "name": {
+            "it": "Mini Bar",
+            "en": "Mini Bar"
+          },
+          "icon": "fh fh-minibar"
+        }
+      ]
+    }
+  ]
+}

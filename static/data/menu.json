@@ -1,0 +1,32 @@
+{
+  "menu": [
+    {
+      "slug": "history",
+      "name": "history"
+    },
+    {
+      "slug": "rooms",
+      "name": "rooms"
+    },
+    {
+      "slug": "restaurant",
+      "name": "restaurant"
+    },
+    {
+      "slug": "services",
+      "name": "services"
+    },
+    {
+      "slug": "location",
+      "name": "location"
+    },
+    {
+      "slug": "virtualtour",
+      "name": "virtualtour"
+    },
+    {
+      "slug": "contacts",
+      "name": "contacts"
+    }
+  ]
+}

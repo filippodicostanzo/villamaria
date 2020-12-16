@@ -1,0 +1,17 @@
+html.dark-mode
+{
+  body {
+    overflow-x: hidden;
+    font-family: 'Lato', sans-serif;
+  }
+  .header, .booking, .footer,  .b-sidebar {
+    background: #4c4c4c;
+    background: -moz-linear-gradient(-45deg, #4c4c4c 0%, #2c2c2c 70%, #2c2c2c 70%, #262525 100%);
+    background: -webkit-linear-gradient(-45deg, #4c4c4c 0%, #2c2c2c 70%, #2c2c2c 70%, #262525 100%);
+    background: linear-gradient(135deg, #4c4c4c 0%, #2c2c2c 70%, #2c2c2c 70%, #262525 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#262525', GradientType=1 );
+  }
+    .vdp-datepicker__calendar {
+      background: #262525;
+    }
+}

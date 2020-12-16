@@ -1,0 +1,168 @@
+/**
+*
+* SLICK CAROUSEL
+*
+*/
+@import 'variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap');
+@import url("../fonts/font-fleurdeselhotel.css");
+@import 'dark.scss';
+@import 'light.scss';
+@import 'responsive.scss';
+
+
+body {
+  overflow-x: hidden;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: 'Lato', sans-serif;
+}
+
+
+/**
+ * HEADER
+ */
+.header {
+  .container {
+    .fixed-top {
+      background-color: var(--background-color);
+    }
+  }
+}
+
+.card {
+  background-color: var(--background-card);
+}
+
+.mt-10 {
+  margin-top: 100px;
+}
+
+
+// Make a button look and behave like a link
+.btn-darkred {
+  background-color: var(--primary-color);
+  color: var(--light-color);
+
+  &:hover {
+    background-color: var(--primary-color)
+  }
+}
+
+.nav {
+  .nuxt-link-active {
+    position: relative;
+
+    &:after {
+      content: '';
+      width: 100%;
+      position: absolute;
+      left: 0;
+      bottom: -4px;
+      border-width: 0 0 1px;
+      border-style: solid;
+    }
+  }
+}
+
+
+.two-columns {
+  @media only screen and (min-width: 768px) {
+    -webkit-column-gap: 60px;
+    -moz-column-gap: 60px;
+    column-gap: 60px;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+  }
+}
+
+.booking {
+  .vdp-datepicker__calendar .cell.selected {
+    background: var(--primary-color);
+    color: white;
+
+    &:hover {
+      background: var(--primary-color);
+      color: white;
+    }
+
+
+  }
+
+  .vdp-datepicker__calendar .cell:not(.blank):not(.disabled).day:hover, .vdp-datepicker__calendar .cell:not(.blank):not(.disabled).month:hover, .vdp-datepicker__calendar .cell:not(.blank):not(.disabled).year:hover {
+    border: none;
+  }
+
+  .form-control {
+    font-size: 12px;
+    height: 38px;
+    border-radius: 0;
+    border: 0;
+
+    &:focus{
+      font-size: 12px;
+    }
+  }
+
+  button {
+    font-size: 14px;
+    height: 38px;
+    border-radius: 0;
+    border: 0;
+    background-color: var(--primary-color);
+    color: var(--light-color)
+  }
+}
+
+
+.b-sidebar {
+  li {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media only screen and(max-width: 767px) {
+  .no-mobile-gutters > .col, .no-mobile-gutters > [class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+
+.showcase {
+  button {
+    display: none !important;
+  }
+}
+
+.container-fluid {
+  overflow-x: hidden;
+}
+
+.btn-outline-primary {
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+
+  &:hover, &:active {
+
+    color: #fff;
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 0.2rem rgba(255, 229, 95, 0);
+  }
+
+
+}
+
+.btn-outline-primary:not(:disabled):not(.disabled):active, .btn-outline-primary:not(:disabled):not(.disabled).active, .show > .btn-outline-primary.dropdown-toggle {
+  color: #fff;
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}

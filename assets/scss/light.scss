@@ -1,0 +1,13 @@
+
+
+html.light-mode {
+ .booking, .footer {
+    background: #c0392b;
+    background: linear-gradient(90deg, #c0392b 0%, #fcfcfc 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#c0392b", endColorstr="#fcfcfc", GradientType=1);
+  }
+
+  .header,  .b-sidebar {
+    background-color: #fcfcfc;
+  }
+}

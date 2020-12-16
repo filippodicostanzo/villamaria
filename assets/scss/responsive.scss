@@ -1,0 +1,33 @@
+@media only screen and(min-width: 960px) {
+  .mobile-menu {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 959px) {
+  .header {
+
+
+    .container {
+      .row {
+        padding-bottom: 1.5rem !important;
+
+        #nav {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .container-fluid {
+    .slider .slick-slide {
+      height: 500px !important;
+
+      .carousel {
+        height: 500px;
+      }
+    }
+  }
+
+
+}

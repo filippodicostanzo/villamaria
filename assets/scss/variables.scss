@@ -1,0 +1,27 @@
+:root {
+  //--background-color: #fcfcfc;
+  //--primary-color: #c0392b;
+  --light-color: #fcfcfc;
+  --dark-color:#2b2b2b;
+}
+
+
+
+.dark-mode {
+  --background-color: #262525;
+  --background-button: #323232;
+  --text-color: #fcfcfc;
+  --primary-color: #b38c2c;
+  --darkred:#b38c2c;
+  --background-card: #4a4a4a;
+  --primary-color-opacity: #b38c2c8c;
+}
+
+.light-mode {
+  --background-color: #fcfcfc;
+  --background-button: #fcfcfc;
+  --text-color: #262525;
+  --primary-color: #c0392b;
+  --primary-color-opacity: #c0392b8c;
+}
+
