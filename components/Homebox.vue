@@ -10,7 +10,9 @@
             camere
             che, i signorotti di allora, per distinzione di classe dividevano in camere Padronali, camere degli ospiti,
             dei familiari e dei famigli. </p>
-          <p><nuxt-link class="btn btn-darkred" :to="localePath('rooms')" tag="a">Scopri di Più</nuxt-link></p>
+          <p>
+            <nuxt-link class="btn btn-darkred" :to="localePath('rooms')" tag="a">Scopri di Più</nuxt-link>
+          </p>
         </div>
       </div>
     </div>
@@ -26,7 +28,9 @@
             giardini terrazzati dove ogni mattina i contadini raccolgono i prodotti biologici (concimati con humus di
             capre e pecore allevate nelle vicine montagne) che possono essere gustati al ristorante.</p>
 
-          <p><nuxt-link class="btn btn-darkred" :to="localePath('restaurant')" tag="a">Scopri di Più</nuxt-link></p>
+          <p>
+            <nuxt-link class="btn btn-darkred" :to="localePath('restaurant')" tag="a">Scopri di Più</nuxt-link>
+          </p>
         </div>
       </div>
     </div>
@@ -37,9 +41,10 @@
              :style="{'background-image': 'url(' + require(`~/assets/images/box-home-winery.jpg`) + ')'}">
         </div>
         <div class="col-md-6 text-box p-5" data-aos="fade-right"><h2>La Cantina</h2>
-          <p>Villa Eva fa parte dello stesso complesso turistico con gli hotel Villa Maria e Giordano e trae vantaggio
-            dei servizi parcheggio, piscina e camere dei due alberghi. </p>
-          <p><a class="btn btn-darkred" href="http://www.lacantinadifranceschino.it" target="_blank">Scopri di Più</a></p>
+          <p>Oltre 400 etichette tra i migliori vini italiani e francesi, potendo scegliere tra rossi, bianchi, rosati,
+            spumanti e champagne, per vivere una preziosa esperienza sensoriale</p>
+          <p><a class="btn btn-darkred" href="http://www.lacantinadifranceschino.it" target="_blank">Scopri di Più</a>
+          </p>
         </div>
       </div>
     </div>
@@ -61,9 +66,9 @@
 </template>
 
 <script>
-    export default {
-        name: "Homebox"
-    }
+  export default {
+    name: "Homebox"
+  }
 </script>
 
 <style lang="scss" scoped>

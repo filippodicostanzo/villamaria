@@ -1,11 +1,6 @@
 <template>
   <div>
 
-
-    <slider :slides="slides"></slider>
-
-    <booking></booking>
-
     <div class="container" data-aos="zoom-in" data-aos-duration="1000">
       <div class="row mt-5">
         <div class="col-12">

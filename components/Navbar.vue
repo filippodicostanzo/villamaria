@@ -112,7 +112,11 @@
 
       a {
         padding: 0;
-        color: var(--primary-color);
+        color: var(--secondary-color);
+
+        &.nuxt-link-active {
+          color: var(--primary-color);
+        }
 
         &:hover {
           text-decoration: none;

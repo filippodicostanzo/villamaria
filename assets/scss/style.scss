@@ -30,6 +30,10 @@ body {
     }
   }
 }
+#top {
+  width: 100%;
+  max-width: 100%;
+}
 
 .card {
   background-color: var(--background-card);
@@ -165,4 +169,11 @@ body {
   color: #fff;
   background-color: var(--primary-color);
   border-color: var(--primary-color);
+}
+
+.text-150{
+  font-size: 150%;
+}
+.text-200 {
+  font-size: 200%;
 }

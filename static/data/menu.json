@@ -9,20 +9,28 @@
       "name": "rooms"
     },
     {
+      "slug": "breakfast",
+      "name": "breakfast"
+    },
+    {
       "slug": "restaurant",
       "name": "restaurant"
+    },
+    {
+      "slug": "winery",
+      "name": "winery"
     },
     {
       "slug": "services",
       "name": "services"
     },
     {
-      "slug": "location",
-      "name": "location"
-    },
-    {
       "slug": "virtualtour",
       "name": "virtualtour"
+    },
+    {
+      "slug": "location",
+      "name": "location"
     },
     {
       "slug": "contacts",

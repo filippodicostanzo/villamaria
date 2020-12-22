@@ -517,6 +517,80 @@
           "icon": "fh fh-minibar"
         }
       ]
+    },
+    {
+      "id": "suite",
+      "name": {
+        "it": "Suite",
+        "en": "Suite"
+      },
+      "description": {
+        "it": "Splendida Suite con vista mare.",
+        "en": ""
+      },
+      "resume": {
+        "it": "",
+        "en": ""
+      },
+      "size": "40",
+      "services": [
+        {
+          "id": "bath",
+          "name": {
+            "it": "Bagno Privato",
+            "en": "Private Bathroom"
+          },
+          "icon": "fh fh-bath"
+        },
+        {
+          "id": "tv",
+          "name": {
+            "it": "TV",
+            "en": "TV"
+          },
+          "icon": "fh fh-television"
+        },
+        {
+          "id": "kit",
+          "name": {
+            "it": "Kit di Cortesia",
+            "en": "Courtesy Kit"
+          },
+          "icon": "fh fh-towel2"
+        },
+        {
+          "id": "air",
+          "name": {
+            "it": "Aria Condizionata",
+            "en": "Air Conditioning"
+          },
+          "icon": "fh fh-air-conditioner"
+        },
+        {
+          "id": "phone",
+          "name": {
+            "it": "Telefono",
+            "en": "Phone"
+          },
+          "icon": "fh fh-telephone"
+        },
+        {
+          "id": "hairdryer",
+          "name": {
+            "it": "Asciugacapelli",
+            "en": "Hairdryer"
+          },
+          "icon": "fh fh-hairdryer"
+        },
+        {
+          "id": "minibar",
+          "name": {
+            "it": "Mini Bar",
+            "en": "Mini Bar"
+          },
+          "icon": "fh fh-minibar"
+        }
+      ]
     }
   ]
 }

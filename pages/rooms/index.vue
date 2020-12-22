@@ -1,7 +1,7 @@
 <template>
   <div>
-    <slider :slides="slides"></slider>
-    <booking></booking>
+    <!--    <slider :slides="slides"></slider>
+        <booking></booking> -->
 
     <div class="container">
       <div class="row mt-5">
@@ -28,9 +28,10 @@
 
         </div>
       </div>
-
+    </div>
+    <div class="container-fluid">
       <div class="row mt-5">
-        <div class="col-sm-12 mt-3" v-for="room in rooms" :class="room.id==='junior-suite' ? 'col-md-12':'col-md-6'"
+        <div class="col-sm-12 col-md-4 col-lg-3 mt-3" v-for="room in rooms"
              data-aos="zoom-in" data-aos-duration="1000">
 
           <div class="card">
@@ -43,13 +44,13 @@
             <div class="card-body text-center" v-if="room.name">
               <div class="row">
                 <div class="col-12">
-                  <h2>{{room.name.it}}</h2>
+                  <nuxt-link :to="localePath('rooms')+'/'+room.id " :key="room.id"><h2>{{room.name.it}}</h2></nuxt-link>
                   <p class="text-center font-weight-lighter">{{room.description.it}}</p>
                 </div>
-                <div class="col-12 services">
+                <!--<div class="col-12 services">
                   <span v-for="service in room.services"><i :class="service.icon" v-b-tooltip.hover
                                                             :title="service.name.it"></i></span>
-                </div>
+                </div> -->
               </div>
             </div>
           </div>
@@ -62,32 +63,38 @@
 </template>
 
 <script>
-    import rooms from '~/static/data/rooms.json'
+  import rooms from '~/static/data/rooms.json'
 
-    export default {
-        name: "rooms",
-        data() {
-            return {
-                slides: [
-                    require(`~/assets/images/slider-rooms-01.jpg`),
-                    require(`~/assets/images/slider-rooms-02.jpg`)
-                ],
-                rooms: []
-            }
-        },
-        mounted() {
-            this.rooms = rooms.rooms
-            console.log(this.rooms);
-        },
+  export default {
+    name: "rooms",
+    data() {
+      return {
+        slides: [
+          require(`~/assets/images/slider-rooms-01.jpg`),
+          require(`~/assets/images/slider-rooms-02.jpg`)
+        ],
+        rooms: []
+      }
+    },
+    mounted() {
+      this.rooms = rooms.rooms
+      console.log(this.rooms);
+    },
 
 
-    }
+  }
 </script>
 
 <style scoped lang="scss">
   .card {
     img {
       max-width: 100%;
+    }
+    a {
+      color: var(--primary-color);
+      &:hover {
+        text-decoration: none;
+      }
     }
   }
 

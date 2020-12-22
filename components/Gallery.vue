@@ -42,7 +42,12 @@
                     images = require.context('../static/images/gallery/restaurant/', false, /\.jpg$/);
                 }
 
-                if (this.gallery === 'standard-double') {
+              if (this.gallery === 'virtual-tour') {
+                images = require.context('../static/images/gallery/virtual-tour/', false, /\.jpg$/);
+              }
+
+
+              if (this.gallery === 'standard-double') {
                     images = require.context('../static/images/gallery/standard-double/', false, /\.jpg$/);
                 }
 
@@ -69,6 +74,10 @@
                 if (this.gallery === 'deluxe-double') {
                     images = require.context('../static/images/gallery/deluxe-double/', false, /\.jpg$/);
                 }
+
+              if (this.gallery === 'suite') {
+                images = require.context('../static/images/gallery/suite/', false, /\.jpg$/);
+              }
 
 
 
