@@ -4,18 +4,30 @@
     <div class="container" data-aos="zoom-in" data-aos-duration="1000">
       <div class="row mt-5">
         <div class="col-12">
-          <h1 class="text-center text-uppercase">dove siamo</h1>
-          <div class="two-columns">
-            <p class=" text-justify">Sorge in pieno centro storico tra il Monastero delle Clarisse ed il Convento di S.
-              Francesco, in una zona
-              signorile e di estrema tranquillità, raggiungibile unicamente a piedi (a circa 10 minuti dalla piazza
-              principale del paese).</p>
-
-            <p class="text-justify"> Villa Maria garantisce agli ospiti, oltre alla massima tranquillità, anche il
-              massimo servizio grazie al
-              parcheggio del vicino Hotel Giordano (della stessa proprietà) dove è possibile sistemare la propria auto e
-              usufruire del trasporto bagagli in camera.</p>
+          <h1 class="text-center text-uppercase">{{$t('title.howtoreachus')}}</h1>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <h4 class="text-capitalize text-center">{{$t('howtoreachus.block_1')}}</h4>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ZoqOsClsxG8" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
           </div>
+          <div class="col-md-6">
+            <h4 class="text-capitalize text-center">{{$t('howtoreachus.block_2')}}</h4>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/VPX5tBCMUqw" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" data-aos="zoom-in" data-aos-duration="1000">
+      <div class="row mt-5">
+        <div class="col-12">
+          <h1 class="text-center text-uppercase">{{$t('title.whereweare')}}</h1>
+          <div v-html="$t('howtoreachus.block_3')"></div>
         </div>
       </div>
     </div>
@@ -46,27 +58,7 @@
         <GMapCircle :options="circleOptions"/>
       </GMap>
     </div>
-    <div class="container" data-aos="zoom-in" data-aos-duration="1000">
-      <div class="row mt-5">
-        <div class="col-12">
-          <h1 class="text-center text-uppercase">come raggiungerci</h1>
-        </div>
-        <div class="row">
-          <div class="col-md-6">
-            <h4 class="text-capitalize text-center">dalla costiera amalfitana</h4>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/ZoqOsClsxG8" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-          </div>
-          <div class="col-md-6">
-            <h4 class="text-capitalize text-center">dal valico di chiunzi</h4>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/VPX5tBCMUqw" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
+
   </div>
 
 </template>
@@ -110,9 +102,7 @@
   .GMap__Wrapper {
     height: 600px;
   }
-
   .GMap__InfoWindow {
-
     h4, p {
       text-align: center;
       color: var(--primary-color);

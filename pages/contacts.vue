@@ -11,7 +11,7 @@
           <p class="text-center text-200">
             <font-awesome-icon :icon="['fas', 'map-marker-alt']"/>
           </p>
-          <p class="text-center text-200">Via SS. Trinità, 84010 <br>Ravello (SA) Italy</p></div>
+          <p class="text-center text-200">Via S. Chiara, 2 - 84010 <br>Ravello (SA) Italy</p></div>
         <div class="col-md-4">
           <p class="text-center text-200">
             <font-awesome-icon :icon="['fas', 'phone']"/>
@@ -34,7 +34,7 @@
           <p class="text-center text-150">
             <font-awesome-icon :icon="['fas', 'envelope']"/>
           </p>
-          <p class="text-center text-150">Booking <br>booking@villamaria.it</p>
+          <p class="text-center text-150">{{$t('contacts.booking')}} <br>booking@villamaria.it</p>
         </div>
 
 
@@ -42,14 +42,14 @@
           <p class="text-center text-150">
             <font-awesome-icon :icon="['fas', 'envelope']"/>
           </p>
-          <p class="text-center text-150">Commerciale <br>direzione@villamaria.it</p>
+          <p class="text-center text-150">{{$t('contacts.commercial')}} <br>direzione@villamaria.it</p>
         </div>
 
         <div class="col-md-4">
           <p class="text-center text-150">
             <font-awesome-icon :icon="['fas', 'envelope']"/>
           </p>
-          <p class="text-center text-150">Amministrazione <br>amministrazione@villamaria.it</p>
+          <p class="text-center text-150">{{$t('contacts.management')}} <br>amministrazione@villamaria.it</p>
         </div>
 
       </div>

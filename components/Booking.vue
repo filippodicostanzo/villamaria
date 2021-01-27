@@ -56,6 +56,11 @@
         </div>
 
       </div>
+      <div class="row no-padding">
+        <div class="col-md-6 offset-md-3 promo-banner">
+          <p class="text-center">Prenota con noi Miglior prezzo garantito + Parcheggio gratuito</p>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -98,7 +103,6 @@
                     let url = `https://booking.ericsoft.com/BookingEngine/Book?idh=ECB9C3FDE9F8B0B9&lang=${this.$i18n.locale}&arrival=${this.$dateFns.format(this.dateIn, 'dd/MM/yyyy')}&departure=${this.$dateFns.format(this.dateOut, 'dd/MM/yyyy')}&pax=${this.guests}`;
                     this.error = false;
                     window.open(url, '_blank');
-
                 }
             }
         },
@@ -152,6 +156,17 @@
         width: 100%;
       }
 
+      .promo-banner {
+        background: var(--primary-color);
+        color: white;
+        border-radius: 9px;
+        padding: 20px;
+        text-align: center;
+        box-shadow: 0 0 15px 2px rgba(0,0,0,0.14118);
+        p{
+          margin: 0;
+        }
+      }
 
     }
 
@@ -160,7 +175,7 @@
 
   @media only screen and (max-width: 767px) {
 
-    .booking-bar-title{
+    .booking-bar-title {
       text-align: center;
     }
 
@@ -169,12 +184,12 @@
         order: 2
       }
 
-      >  div:nth-child(2) {
-        order:1
+      > div:nth-child(2) {
+        order: 1
       }
 
-      >  div:nth-child(3) {
-        order:3
+      > div:nth-child(3) {
+        order: 3
       }
     }
 

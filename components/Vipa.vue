@@ -3,8 +3,7 @@
     <div class="row">
       <div class="col-12">
         <div>
-        Boutique e Bottega Villa Maria, Scuola di cucina, Hotel Villa Maria, Hotel Giordano e Villa Eva
-        fanno parte di un unico complesso turistico
+        {{$t('home.block_2')}}
         </div>
       </div>
     </div>

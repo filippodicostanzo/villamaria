@@ -1,7 +1,8 @@
 <template>
   <div>
+    <popup v-if="this.$store.state.popup.active"></popup>
+    <booking-small></booking-small>
     <slider :slides="slides"></slider>
-    <booking></booking>
     <slogan></slogan>
     <vipa></vipa>
     <homebox></homebox>
@@ -23,6 +24,7 @@
     import Backtotop from "../components/Backtotop";
     import Footer from "../components/Footer"
     import Socialbar from "../components/Socialbar";
+    import {BookingSmall, Popup} from "../.nuxt/components";
 
     export default {
         components: {
@@ -36,7 +38,9 @@
             'carousel': Carousel,
             'back-to-top': Backtotop,
             'vue-footer': Footer,
-            'social-bar': Socialbar
+            'social-bar': Socialbar,
+            'popup': Popup,
+            'booking-small': BookingSmall
         },
 
         data() {
@@ -50,13 +54,23 @@
         },
 
         mounted() {
+            let body  = document.getElementsByTagName("body")[0];
 
+            if(this.$store.state.popup.active) {
+
+                if (!body.classList.contains('overflow-hidden')) {
+                    body.classList.add('overflow-hidden');
+                }
+            }
 
             this.$nextTick(() => {
                     this.$nuxt.$loading.start();
                     setTimeout(() => this.$nuxt.$loading.finish(), 500);
                 }
             );
+
+
+
         },
 
 

@@ -2,9 +2,18 @@
   .mobile-menu {
     display: none;
   }
+
+  .booking-mobile {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 959px) {
+
+  .booking {
+    display: none;
+  }
+
   .header {
 
 

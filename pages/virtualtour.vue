@@ -1,26 +1,16 @@
 <template>
   <div>
+    <booking-small></booking-small>
 
 
     <slider :slides="slides"></slider>
 
-    <booking></booking>
 
     <div class="container" data-aos="zoom-in" data-aos-duration="1000">
       <div class="row mt-5">
         <div class="col-12">
-          <h1 class="text-center text-uppercase">virtual tour</h1>
-          <div class="two-columns">
-            <p class=" text-justify">Sorge in pieno centro storico tra il Monastero delle Clarisse ed il Convento di S.
-              Francesco, in una zona
-              signorile e di estrema tranquillità, raggiungibile unicamente a piedi (a circa 10 minuti dalla piazza
-              principale del paese).</p>
-
-            <p class="text-justify"> Villa Maria garantisce agli ospiti, oltre alla massima tranquillità, anche il
-              massimo servizio grazie al
-              parcheggio del vicino Hotel Giordano (della stessa proprietà) dove è possibile sistemare la propria auto e
-              usufruire del trasporto bagagli in camera.</p>
-          </div>
+          <h1 class="text-center text-uppercase">{{$t('title.virtualtour')}}</h1>
+          <div v-html="$t('virtualtour.block')"></div>
         </div>
       </div>
     </div>
@@ -44,7 +34,6 @@
       <gallery gallery="virtual-tour"></gallery>
 
     </div>
-
 
 
   </div>

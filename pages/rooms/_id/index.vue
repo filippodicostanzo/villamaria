@@ -1,20 +1,22 @@
 <template>
   <div>
+    <booking-small></booking-small>
     <slider :slides="slides"></slider>
 
-    <booking></booking>
+
 
     <div class="container" data-aos="zoom-in" data-aos-duration="1000">
       <div class="row mt-5">
         <div class="col-md-4 text-md-center text-lg-left text-sm-center mt-sm-3">
-          <button class="btn btn-outline-primary">Torna alle Camere</button>
+          <button class="btn btn-outline-primary text-capitalize">{{$t('rooms.backtotherooms')}}</button>
         </div>
         <div class="col-md-4"></div>
         <div class="col-md-4 text-md-center text-lg-right text-sm-center mt-sm-3 mb-sm-5">
-          <b-dropdown id="dropdown-1" text="Scegli Tipologia" variant="outline-primary">
+          <b-dropdown id="dropdown-1" :text="$t('rooms.choosethetype')" variant="outline-primary">
             <!-- <nuxt-link v-for="room in rooms" ><b-dropdown-item href="camere">{{room.name.it}}</b-dropdown-item></nuxt-link> -->
             <nuxt-link v-for="room in rooms" tag="b-dropdown-item" :to="room.id" active :key="room.id">
-              {{room.name.it}}
+              <span v-if="$i18n.locale==='it'"> {{room.name.it}}</span>
+              <span v-if="$i18n.locale==='en'"> {{room.name.en}}</span>
             </nuxt-link>
             <!-- <b-dropdown-item  v-for="room in rooms"  :href="room.id">{{room.name.it}}</b-dropdown-item> -->
 
@@ -23,17 +25,21 @@
       </div>
       <div class="row">
         <div class="col-12">
-          <h1 class="text-center text-uppercase">{{room.name.it}}</h1>
-          <h3 class="text-center">Dimensioni medie: {{room.size}} mq</h3>
-          <p class="text-center">{{room.description.it}}</p>
+          <h1 class="text-center text-uppercase" v-if="$i18n.locale==='it'">{{room.name.it}}</h1>
+          <h1 class="text-center text-uppercase" v-if="$i18n.locale==='en'">{{room.name.en}}</h1>
+          <h3 class="text-center">{{$t('rooms.mediumsize')}}: {{room.size}} mq</h3>
+          <p class="text-center" v-if="$i18n.locale==='it'">{{room.description.it}}</p>
+          <p class="text-center" v-if="$i18n.locale==='en'">{{room.description.en}}</p>
         </div>
       </div>
 
       <div class="row">
         <div class="col-12 mt-5">
-          <h3 class="text-center text-uppercase">Servizi</h3>
-          <p class="text-center"><span v-for="(service, index) in room.services">{{service.name.it}}<span
-            v-if="index+1<room.services.length"> - </span></span></p>
+          <h3 class="text-center text-uppercase">{{$t('title.services')}}</h3>
+          <p class="text-center"><span v-for="(service, index) in room.services">
+            <span v-if="$i18n.locale==='it'">{{service.name.it}}</span>
+            <span v-if="$i18n.locale==='en'">{{service.name.en}}</span>
+            <span v-if="index+1<room.services.length"> - </span></span></p>
         </div>
       </div>
 
@@ -45,7 +51,7 @@
       </div>-->
       <div class="row rooms-nav mt-5">
         <div class="col-12">
-          <h2 class="text-center">Altre Camere</h2>
+          <h2 class="text-center text-uppercase">{{$t('title.otherrooms')}}</h2>
         </div>
         <div class="col-md-4">
           <div v-if="prev">
@@ -56,10 +62,11 @@
                        :alt="prev.id">
                 </div>
                 <div class="col-12 text-center mt-2">
-                  <p>{{prev.name.it}}</p>
-                  <p class="small">
+                  <p v-if="$i18n.locale==='it'">{{prev.name.it}}</p>
+                  <p v-if="$i18n.locale==='en'">{{prev.name.en}}</p>
+                  <p class="small text-capitalize">
                     <font-awesome-icon :icon="['far', 'arrow-alt-circle-left']"/>
-                    Precedente
+                    {{$t('rooms.previous')}}
                   </p>
                 </div>
 
@@ -77,8 +84,9 @@
                        :alt="next.id">
                 </div>
                 <div class="col-12 text-center mt-2">
-                  <p>{{next.name.it}}</p>
-                  <p class="small">Successiva
+                  <p v-if="$i18n.locale==='it'">{{next.name.it}}</p>
+                  <p v-if="$i18n.locale==='en'">{{next.name.en}}</p>
+                  <p class="small text-capitalize">{{$t('rooms.next')}}
                     <font-awesome-icon :icon="['far', 'arrow-alt-circle-right']"/>
                   </p>
                 </div>

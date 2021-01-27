@@ -4,15 +4,17 @@
 
     <div class="lang-box vertical-center">
       <div class="container">
-        <nuxt-link :to="switchLocalePath('en')">
-          <img src="https://www.giordanohotel.it/lib/img/bandiere/en.gif">
+        <nuxt-link :to="switchLocalePath('en')" exact>
+          <img :src="require(`~/assets/images/en.gif`)">
         </nuxt-link>
-        <nuxt-link :to="switchLocalePath('it')">
-          <img src="https://www.giordanohotel.it/lib/img/bandiere/it.gif">
+        <nuxt-link :to="switchLocalePath('it')" exact>
+          <img :src="require(`~/assets/images/it.gif`)">
         </nuxt-link>
+        <!--
         <nuxt-link :to="switchLocalePath('fr')">
           <img src="https://www.giordanohotel.it/lib/img/bandiere/fr.gif">
         </nuxt-link>
+        -->
         <button v-b-toggle.collapse-1 class="b-button">
           <font-awesome-icon :icon="['fas', 'times']"  /></button>
       </div>

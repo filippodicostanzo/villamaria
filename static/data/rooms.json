@@ -8,7 +8,7 @@
       },
       "description": {
         "it": "Camera Matrimoniale Basic senza vista mare",
-        "en": ""
+        "en": "Basic Double Room without sea view"
       },
       "resume": {
         "it": "",
@@ -81,8 +81,8 @@
         "en": "Standard Double"
       },
       "description": {
-        "it": "Vista mare laterale o parziale, con balcone o finestra.",
-        "en": ""
+        "it": "Vista mare laterale o parziale, con balconcino o finestra, nel corpo centrale o nel residence dell’hotel.",
+        "en": "Side or partial sea view, with balcony or window, in the main building or in the hotel residence."
       },
       "resume": {
         "it": "",
@@ -156,7 +156,7 @@
       },
       "description": {
         "it": "Balconcino o terrazzino con vista mare laterale o parziale.",
-        "en": ""
+        "en": "Balcony or terrace with lateral or partial sea view."
       },
       "resume": {
         "it": "",
@@ -229,8 +229,8 @@
         "en": "Superior Double"
       },
       "description": {
-        "it": "Situata nel residence dell'Hotel con ampia finestre e vista mare frontale. Oppure nel corpo centrale con balconcino e vista mare.",
-        "en": ""
+        "it": "Situata nel corpo centrale dell'Hotel, con balconcino e vista mare.",
+        "en": "Located in the central body of the Hotel, with a balcony and sea view."
       },
       "resume": {
         "it": "",
@@ -303,8 +303,8 @@
         "en": "Deluxe Double"
       },
       "description": {
-        "it": "Situata nel residence dell'hotel con terrazzo e vista mare",
-        "en": ""
+        "it": "Situata nel residence dell'hotel con terrazzo e vista mare.",
+        "en": "Located in the hotel residence with terrace and sea view."
       },
       "resume": {
         "it": "",
@@ -378,7 +378,7 @@
       },
       "description": {
         "it": "Balconcino e vista mare laterale",
-        "en": ""
+        "en": "Balcony and side sea view."
       },
       "resume": {
         "it": "",
@@ -452,7 +452,7 @@
       },
       "description": {
         "it": "Splendida Junior Suite con vista giardino.",
-        "en": ""
+        "en": "Splendid Junior Suite with garden view"
       },
       "resume": {
         "it": "",
@@ -518,6 +518,7 @@
         }
       ]
     },
+
     {
       "id": "suite",
       "name": {
@@ -525,8 +526,8 @@
         "en": "Suite"
       },
       "description": {
-        "it": "Splendida Suite con vista mare.",
-        "en": ""
+        "it": "Camera con ampio terrazzo e vista mare.",
+        "en": "Room with large terrace and sea view."
       },
       "resume": {
         "it": "",

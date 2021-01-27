@@ -2,18 +2,29 @@ export default {
 
   target: 'static',
   // Global page headers (https://go.nuxtjs.dev/config-head)
+
   head: {
-    title: 'HotelVillaMaria',
+    title: 'Hotel Villa Maria - Ravello Amalfi Coast',
     meta: [
       {charset: 'utf-8'},
       {name: 'viewport', content: 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0'},
-      {hid: 'description', name: 'description', content: ''}
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Owned by the Palumbo family, offers to the guest the romantic atmosphere of the enchanting Ravello. It is in a central position, situated among Villa Rufolo, the main square and Villa Cimbrone. Restaurant with sea view terraces, wide parking and solarium.'
+      },
+      {
+        name: 'keywords',
+        content: 'ravello,  villa maria, villa, maria, coast, amalfi coast, amalfitana, costiera, costiera amalfitana, amalfitana coast, praiano, sorrento, atrani, maiori, minori, tramonti, salerno, napoli, naples, campania, italia, italy, paestum, hotel, albergo, alberghi, cilento, turismo, viaggi, tourism, travel'
+      }
     ],
     link: [
       {rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'},
       {rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Merriweather&display=swap'}
     ]
-  },
+  }
+  ,
+
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: [    // SCSS file in the project
@@ -75,7 +86,7 @@ export default {
   ],
 
   bootstrapVue: {
-    icons: false
+    icons: false,
   },
 
   i18n: {
@@ -92,13 +103,13 @@ export default {
         code: 'en',
         iso: 'en-US',
         file: 'en-US.js'
-      },
+      },/*
       {
         name: 'Francais',
         code: 'fr',
         iso: 'fr-FR',
         file: 'fr-FR.js'
-      },
+      },*/
 
 
     ],
@@ -121,7 +132,6 @@ export default {
         en: '/rooms/:id'
       },
 
-
       restaurant: {
         it: '/ristorante',
         en: '/restaurant',
@@ -137,10 +147,28 @@ export default {
     },
     vueI18nLoader: true,
     loadLanguagesAsync: true,
+    seo: true
   },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
-  build: {},
+  build: {
+    html: {
+      minify: {
+        collapseBooleanAttributes: true,
+        decodeEntities: true,
+        minifyCSS: true,
+        minifyJS: true,
+        processConditionalComments: true,
+        removeEmptyAttributes: true,
+        removeRedundantAttributes: true,
+        trimCustomFragments: true,
+        useShortDoctype: true,
+        minifyURLs: true,
+        removeComments: true,
+        removeEmptyElements: true
+      }
+    }
+  },
 
   loading: {
     color: '#c0392b',
@@ -160,6 +188,57 @@ export default {
   script: [
     {src: 'bootstrap-material-datetimepicker.js', body: true},
   ],
+
+  router: {
+    linkExactActiveClass: "nuxt-link-exact-active"
+  },
+
+  cookies: {
+    necessary: [
+      {
+        //if multilanguage
+        name: {
+          en: 'Default Cookies'
+        },
+        //else
+
+        //if multilanguage
+        description: {
+          en: 'Used for cookie control.'
+        },
+        //else
+
+        cookies: ['cookie_control_consent', 'cookie_control_enabled_cookies']
+      }
+    ],
+    optional: [
+      {
+        name: 'Google Analitycs',
+        //if you don't set identifier, slugified name will be used
+        identifier: 'ga',
+        //if multilanguage
+        description: {
+          en: 'Google GTM is ...'
+        },
+        //else
+
+        initialState: true,
+        src: 'https://www.googletagmanager.com/gtag/js?id=<API-KEY>',
+        async: true,
+        cookies: ['_ga', '_gat', '_gid'],
+        accepted: () => {
+          window.dataLayer = window.dataLayer || [];
+          window.dataLayer.push({
+            'gtm.start': new Date().getTime(),
+            event: 'gtm.js'
+          });
+        },
+        declined: () => {
+        }
+      }
+    ]
+  }
+
 
 }
 

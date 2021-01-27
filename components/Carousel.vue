@@ -18,8 +18,8 @@
 
       <div class="carousel">
         <a href="http://www.cookingravello.com/" target="_blank">
-          <img :src="require(`~/assets/images/nonnaorsola-light.png`)" v-if="this.$colorMode.preference === 'light'">
-          <img :src="require(`~/assets/images/nonnaorsola-dark.png`)" v-if="this.$colorMode.preference === 'dark'">
+          <img :src="require(`~/assets/images/cookingclass-light.png`)" v-if="this.$colorMode.preference === 'light'">
+          <img :src="require(`~/assets/images/cookingclass-dark.png`)" v-if="this.$colorMode.preference === 'dark'">
         </a>
       </div>
 

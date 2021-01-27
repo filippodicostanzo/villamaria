@@ -9,15 +9,17 @@
 
       <div class="lang-box text-center mt-4">
         <div class="container">
-          <nuxt-link :to="switchLocalePath('en')">
-            <img src="https://www.giordanohotel.it/lib/img/bandiere/en.gif">
+          <nuxt-link :to="switchLocalePath('en')" exact>
+            <img :src="require(`~/assets/images/en.gif`)">
           </nuxt-link>
-          <nuxt-link :to="switchLocalePath('it')">
-            <img src="https://www.giordanohotel.it/lib/img/bandiere/it.gif">
+          <nuxt-link :to="switchLocalePath('it')" exact>
+            <img :src="require(`~/assets/images/it.gif`)">
           </nuxt-link>
+          <!--
           <nuxt-link :to="switchLocalePath('fr')">
             <img src="https://www.giordanohotel.it/lib/img/bandiere/fr.gif">
           </nuxt-link>
+          -->
         </div>
       </div>
       <navbar mobile="true"></navbar>

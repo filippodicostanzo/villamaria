@@ -3,10 +3,10 @@
   <div data-aos="zoom-in" id="nav" >
     <b-nav v-if="!mobile">
       <b-nav-item v-b-toggle.collapse-1 v-scroll-to="'#top'">
-        <font-awesome-icon :icon="['fas', 'globe']"/>
+        <font-awesome-icon :icon="['fas', 'flag-usa']"/>
       </b-nav-item>
       <b-nav-item v-for="item in menu" :key="item.slug">
-        <nuxt-link :to="localePath(item.slug)">{{$t('menu.'+item.name)}}</nuxt-link>
+        <nuxt-link :to="localePath(item.slug)" exact>{{$t('menu.'+item.name)}}</nuxt-link>
       </b-nav-item>
 
 
@@ -21,9 +21,11 @@
     </b-nav>
 
     <b-nav v-if="mobile">
-
+      <b-nav-item>
+      <nuxt-link :to="localePath('/')" tag="a"><span @click="$nuxt.$emit('close-sidemenu')" exact>Home</span></nuxt-link>
+      </b-nav-item>
       <b-nav-item v-for="item in menu" :key="item.slug">
-        <nuxt-link :to="localePath(item.slug)" tag="a"><span @click="$nuxt.$emit('close-sidemenu')">{{$t('menu.'+item.name)}}</span></nuxt-link>
+        <nuxt-link :to="localePath(item.slug)" tag="a"><span @click="$nuxt.$emit('close-sidemenu')" exact>{{$t('menu.'+item.name)}}</span></nuxt-link>
       </b-nav-item>
 
       <b-nav-item v-if="this.$colorMode.preference === 'dark'" v-on:click="changeStyle('light')">
@@ -114,7 +116,7 @@
         padding: 0;
         color: var(--secondary-color);
 
-        &.nuxt-link-active {
+        &.nuxt-link-exact-active {
           color: var(--primary-color);
         }
 

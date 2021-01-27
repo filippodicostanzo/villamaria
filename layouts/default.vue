@@ -11,7 +11,8 @@
         <social-bar></social-bar>
         <sidenav></sidenav>
         <back-to-top></back-to-top>
-        <CookieControl locale="it"/>
+        <CookieControl :locale="this.$i18n.locale"/>
+
       </client-only>
     </div>
   </div>
@@ -49,6 +50,19 @@
             'social-bar': Socialbar,
 
         },
+        head() {
+            const i18nSeo = this.$nuxtI18nSeo();
+            return {
+               title: this.$t('title.website'),
+                meta: [
+                    {
+                        hid: 'description',
+                        name: 'description',
+                        content: 'Owned by the Palumbo family, offers to the guest the romantic atmosphere of the enchanting Ravello. It is in a central position, situated among Villa Rufolo, the main square and Villa Cimbrone. Restaurant with sea view terraces, wide parking and solarium.'
+                    },
+                    ...i18nSeo.meta]
+            }
+        }
     }
 
 </script>
