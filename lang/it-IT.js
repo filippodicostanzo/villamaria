@@ -244,7 +244,7 @@ export default {
   book:{
     book:'PRENOTA',
     holiday: 'IL TUO SOGGIORNO CON NOI',
-    slogan: 'Miglior prezzo garantito + Parcheggio gratuito',
+    slogan: 'Miglior prezzo garantito',
     send: 'Invia'
   },
   covid: {

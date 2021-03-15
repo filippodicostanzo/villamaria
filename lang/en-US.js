@@ -185,7 +185,7 @@ export default {
   book:{
     book:'BOOK',
     holiday: 'YOUR HOLIDAY WITH US',
-    slogan: 'Best price guaranteed + Free parking',
+    slogan: 'Best price guaranteed',
     send: 'Send'
   },
 
