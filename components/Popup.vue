@@ -43,11 +43,11 @@
       left: 50%;
       padding: 20px;
       background: lightgray;
-      transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%) !important;
       width: 80%;
 
       @media screen and (min-width: 1092px) {
-        transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%) !important;
         width: 50%;
       }
 
