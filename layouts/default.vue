@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="container-fluid p-0">
-      <client-only>
+
         <vue-header></vue-header>
 
         <Nuxt/>
@@ -13,7 +13,6 @@
         <back-to-top></back-to-top>
         <CookieControl :locale="this.$i18n.locale"/>
 
-      </client-only>
     </div>
   </div>
 </template>
