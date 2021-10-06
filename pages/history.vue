@@ -11,6 +11,7 @@
           <div v-html="$t('history.block')"></div>
 
 
+
         </div>
       </div>
     </div>

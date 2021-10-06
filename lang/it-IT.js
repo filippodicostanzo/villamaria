@@ -69,9 +69,9 @@ export default {
             in alberghi e ristoranti all'estero, si dedicano alla conduzione di Villa Maria con giovanile entusiasmo
             ma con lo stessa attenzione ed amore degli avi.</p>
 
-          <p class="text-justify">Ricca ed interessante è la storia di questa villa che fu la dimora dei
+          <p class="text-justify">Ricca ed interessante è la storia di questa villa, situata in un’oasi di assoluta tranquillità raggiungibile unicamente a piedi. Ex dimora dei
             nobili romani Marchesi De Cinque, storia che si mescola con quella di Ravello e della costiera amalfitana.
-            La struttura, che conserva l'elegante forma del palazzotto signorile, nel corso degli anni ha subito delle
+            La struttura, che conserva l'elegante forma del palazzotto signorile, senza ascensore, nel corso degli anni ha subito delle
             significative ristrutturazioni che l'hanno portata all'attuale splendore. In tutti gli ambienti, saloni,
             scale e soggiorni è possibile ammirare gli antichi pavimenti in marmo, mentre nelle camere e nei bagni
             fanno mostra di sé le maioliche dipinte a mano dai maestri della Scuola Vietrese.</p>

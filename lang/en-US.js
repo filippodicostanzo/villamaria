@@ -59,14 +59,14 @@ export default {
 
   history: {
     block: ` <div class="two-columns">
- 
+
              <p class="text-justify">The Palumbo family, owners from four generations, since 1934 with great grandparents
               Vincenzo and Orsola, still personally manages the hotel with grandchildren Francesco and Giuseppe who,
               thanks to the experience acquired in hotels and restaurants abroad, devote themselves to the hotel with
               youthful spirit but with the same attention and commitment of their predecessors.</p>
- 
-            <p class="text-justify">Rich and interesting is the history of this villa which was roman noble Marquis de
-              Cinque family's manor, an history which blends with Ravello's and the Amalfi Coast's. The structure, while
+
+            <p class="text-justify">Rich and interesting is the history of this villa, situated in a secluded and peaceful area reachable only on foot. Once a roman noble Marquis de
+              Cinque family's manor, an history which blends with Ravello's and the Amalfi Coast's. The structure, without lift, while
               preserving the elegant forms of a lordly mansion, in the years has undergone noteworthy redecorations
               which have fashioned its actual splendour. In all of the premises, halls, staircases and public areas it
               is still possible to admire the antique marble floors and in the rooms and the bathrooms hand painted
