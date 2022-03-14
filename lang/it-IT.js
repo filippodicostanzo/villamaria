@@ -28,7 +28,8 @@ export default {
     services: 'servizi',
     howtoreachus: 'come raggiungerci',
     whereweare: 'dove siamo',
-    otherrooms: 'altre camere'
+    otherrooms: 'altre camere',
+    help:'aiuti covid-19'
   },
 
   home: {

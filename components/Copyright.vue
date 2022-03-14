@@ -10,7 +10,9 @@
           <font-awesome-icon :icon="['fas', 'heart']"/>
           by Locali D'Autore
         </div>
-        <div class="col-md-4"></div>
+        <div class="col-md-4 text-right">
+          <nuxt-link :to="localePath('help')">Aiuti Covid-19</nuxt-link>
+        </div>
       </div>
     </div>
   </div>

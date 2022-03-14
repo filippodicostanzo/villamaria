@@ -28,7 +28,8 @@ export default {
     services: 'services',
     howtoreachus: 'how to reach us',
     whereweare: 'where we are',
-    otherrooms: 'other rooms'
+    otherrooms: 'other rooms',
+    help:'aiuti covid-19'
   },
 
 
