@@ -92,14 +92,14 @@
           },
           pizzeria: {
             title: {
-              it: 'Pizzeria & Snack',
-              en: 'Pizzeria & Snack'
+              it: 'Servizio Snack Bar',
+              en: 'Snack Bar Service'
             },
             image: require(`~/assets/images/service-pizzeria.jpg`),
             url: '#',
             desc: {
-              it: `Servizio Snack aperto dalle ore 12 alle 17 disponibile da metà Maggio a Settembre nell'area dedicata a bordo piscina.`,
-              en: `Snack service open from 12 to 17 available from mid May to September in the area dedicated to the pool.`
+              it: `Servizio Snack aperto dalle ore 12 alle 17 disponibile da metà Maggio a Settembre nell'area dedicata a bordo piscina (presso l'hotel Giordano, della stessa proprietà)`,
+              en: `Snack service open from 12 to 17 available from mid May to September by the Swimming pool Area (at the sister Hotel Giordano).`
             }
           },
           cookingclass: {
