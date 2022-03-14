@@ -32,7 +32,7 @@
   .small {
     img{
       height: 100px;
-      margin-top: -50px;
+      margin-top: -50px !important;
     }
   }
 </style>
