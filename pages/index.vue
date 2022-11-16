@@ -1,6 +1,6 @@
 <template>
   <div>
-    <popup v-if="this.$store.state.popup.active"></popup>
+    <!-- <popup v-if="this.$store.state.popup.active"></popup> -->
     <booking-small></booking-small>
     <slider :slides="slides"></slider>
     <slogan></slogan>
