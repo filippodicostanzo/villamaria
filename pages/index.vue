@@ -56,12 +56,12 @@
         mounted() {
             let body  = document.getElementsByTagName("body")[0];
 
-            if(this.$store.state.popup.active) {
+            /*if(this.$store.state.popup.active) {
 
                 if (!body.classList.contains('overflow-hidden')) {
                     body.classList.add('overflow-hidden');
                 }
-            }
+            }*/
 
             this.$nextTick(() => {
                     this.$nuxt.$loading.start();
